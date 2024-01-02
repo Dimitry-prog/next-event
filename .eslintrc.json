@@ -14,5 +14,9 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "no-var": "off",
+    "react/prop-types": "off"
+  }
 }
