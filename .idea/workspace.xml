@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/webhook/clerk/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/webhook/clerk/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
       <recent name="D:\webWork\example\java-script-mastery\next-event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)" />
     </key>
@@ -92,7 +94,7 @@
       <workItem from="1704129331212" duration="3808000" />
       <workItem from="1704197496661" duration="5008000" />
       <workItem from="1704202626961" duration="7813000" />
-      <workItem from="1704214980996" duration="1865000" />
+      <workItem from="1704214980996" duration="4286000" />
     </task>
     <servers />
   </component>
