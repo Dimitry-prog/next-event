@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: clerk">
+      <change beforePath="$PROJECT_DIR$/lib/actions/user-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user-actions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +68,8 @@
       <recent name="D:\webWork\example\java-script-mastery\next-event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
+      <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)" />
     </key>
   </component>
@@ -94,11 +94,24 @@
       <workItem from="1704214980996" duration="5619000" />
       <workItem from="1704284856554" duration="1017000" />
       <workItem from="1704286333575" duration="1153000" />
-      <workItem from="1704287573032" duration="958000" />
+      <workItem from="1704287573032" duration="3130000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: clerk">
+      <option name="closed" value="true" />
+      <created>1704289971595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704289971595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: clerk" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: clerk" />
   </component>
 </project>

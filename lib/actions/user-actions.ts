@@ -7,7 +7,7 @@ import prisma from '../prismadb';
 export const createUser = async (userData: UserType) => {
   try {
     const user = await prisma.user.create({ data: userData });
-    return user;
+    return JSON.parse(JSON.stringify(user));
   } catch (e) {
     handleError(e);
   }
