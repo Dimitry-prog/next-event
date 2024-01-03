@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: clerk">
-      <change beforePath="$PROJECT_DIR$/lib/actions/user-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user-actions.ts" afterDir="false" />
-    </list>
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: deploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,8 +66,8 @@
       <recent name="D:\webWork\example\java-script-mastery\next-event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
+      <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)" />
     </key>
   </component>
@@ -94,7 +92,7 @@
       <workItem from="1704214980996" duration="5619000" />
       <workItem from="1704284856554" duration="1017000" />
       <workItem from="1704286333575" duration="1153000" />
-      <workItem from="1704287573032" duration="3130000" />
+      <workItem from="1704287573032" duration="3577000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -104,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704289971595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix: deploy">
+      <option name="closed" value="true" />
+      <created>1704291529945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704291529945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: deploy">
+      <option name="closed" value="true" />
+      <created>1704291768196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704291768196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: clerk" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: clerk" />
+    <MESSAGE value="fix: deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: deploy" />
   </component>
 </project>
