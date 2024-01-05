@@ -18,3 +18,5 @@ export const handleError = (error: unknown) => {
     message,
   };
 };
+
+export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
