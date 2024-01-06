@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/uploadthing/core.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/uploadthing/core.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/shared/event-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <workItem from="1704286333575" duration="1153000" />
       <workItem from="1704287573032" duration="6418000" />
       <workItem from="1704387162465" duration="6156000" />
-      <workItem from="1704464893259" duration="1971000" />
+      <workItem from="1704464893259" duration="5397000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
