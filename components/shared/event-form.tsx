@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { EventFormDataType } from '@/types/form-data-types';
 import { eventFormSchema } from '@/lib/validation/form-event-validation';
 import { eventDefaultValues } from '@/lib/contants';
-import Dropdown from '@/components/shared/dropdown';
+import DropdownCategories from '@/components/shared/dropdown-categories';
 import { Textarea } from '@/components/ui/textarea';
 import FileUploader from '@/components/shared/file-uploader';
 import { useState } from 'react';
@@ -17,6 +17,10 @@ import DatePicker from 'react-datepicker';
 import { Checkbox } from '@/components/ui/checkbox';
 
 import 'react-datepicker/dist/react-datepicker.css';
+import { useUploadThing } from '@/lib/uploadthing';
+import { handleError } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
+import { createEvent } from '@/lib/actions/event-actions';
 
 type EventFormProps = {
   userId: string;
@@ -25,13 +29,42 @@ type EventFormProps = {
 
 const EventForm = ({ userId, type }: EventFormProps) => {
   const [files, setFiles] = useState<File[]>([]);
+  const { startUpload } = useUploadThing('imageUploader');
+  const router = useRouter();
 
   const form = useForm<EventFormDataType>({
     resolver: zodResolver(eventFormSchema),
     defaultValues: eventDefaultValues,
   });
 
-  const onSubmit: SubmitHandler<EventFormDataType> = (data) => {};
+  const onSubmit: SubmitHandler<EventFormDataType> = async (data) => {
+    console.log(data);
+
+    let uploadImageUrl = data.imageUrl;
+    if (files.length) {
+      const uploadedImages = await startUpload(files);
+      if (!uploadedImages) return;
+
+      uploadImageUrl = uploadedImages[0].url;
+    }
+
+    if (type === 'Create') {
+      try {
+        const event = await createEvent({
+          event: { ...data, imageUrl: uploadImageUrl },
+          userId,
+          path: '/profile',
+        });
+
+        if (event) {
+          form.reset();
+          router.push(`/events/${event.id}`);
+        }
+      } catch (e) {
+        handleError(e);
+      }
+    }
+  };
 
   return (
     <Form {...form}>
@@ -55,7 +88,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             render={({ field }) => (
               <FormItem className="w-full">
                 <FormControl>
-                  <Dropdown value={field.value} onChangeHandler={field.onChange} />
+                  <DropdownCategories value={field.value} onChangeHandler={field.onChange} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

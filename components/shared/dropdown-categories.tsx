@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { startTransition, useState } from 'react';
+import { startTransition, useEffect, useState } from 'react';
 import { CategoryType } from '@/types/category-types';
 import {
   AlertDialog,
@@ -21,17 +21,35 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { Input } from '@/components/ui/input';
+import { createCategory, getCategories } from '@/lib/actions/category-actions';
 
-type DropdownProps = {
+type DropdownCategoriesProps = {
   value?: string;
   onChangeHandler?: () => void;
 };
 
-const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
+const DropdownCategories = ({ value, onChangeHandler }: DropdownCategoriesProps) => {
   const [categories, setCategories] = useState<CategoryType[]>([]);
   const [newCategory, setNewCategory] = useState('');
 
-  const handleAddCategory = () => {};
+  const handleAddCategory = () => {
+    createCategory(newCategory.trim()).then((category) => {
+      if (category) {
+        setCategories((prev) => [...prev, category]);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const getAllCategories = async () => {
+      const categoriesList = await getCategories();
+      if (categoriesList) {
+        setCategories(categoriesList);
+      }
+    };
+
+    getAllCategories();
+  }, []);
 
   return (
     <Select onValueChange={onChangeHandler} defaultValue={value}>
@@ -48,7 +66,7 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
 
         <AlertDialog>
           <AlertDialogTrigger className="w-full py-3 pl-8 p-medium-14 flex text-primary-500 rounded-sm hover:bg-primary-50 focus:text-primary-500">
-            Open
+            Add new category
           </AlertDialogTrigger>
           <AlertDialogContent className="bg-white">
             <AlertDialogHeader>
@@ -75,4 +93,4 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
   );
 };
 
-export default Dropdown;
+export default DropdownCategories;
