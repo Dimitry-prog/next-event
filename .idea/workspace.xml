@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/dropdown-categories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/event-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/uploadthing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/uploadthing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/validation/form-event-validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validation/form-event-validation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/event-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/event-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,7 @@
       <recent name="D:\webWork\example\java-script-mastery\next-event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)\events\create" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)" />
@@ -105,6 +105,8 @@
       <workItem from="1704464893259" duration="5397000" />
       <workItem from="1704560155442" duration="1334000" />
       <workItem from="1704561514055" duration="5487000" />
+      <workItem from="1704639146034" duration="457000" />
+      <workItem from="1704639645723" duration="2849000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
