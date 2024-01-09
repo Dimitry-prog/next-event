@@ -5,7 +5,6 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { EventFormDataType } from '@/types/form-data-types';
 import { eventFormSchema } from '@/lib/validation/form-event-validation';
 import { eventDefaultValues } from '@/lib/contants';
 import DropdownCategories from '@/components/shared/dropdown-categories';
@@ -15,12 +14,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 import DatePicker from 'react-datepicker';
 import { Checkbox } from '@/components/ui/checkbox';
-
-import 'react-datepicker/dist/react-datepicker.css';
 import { useUploadThing } from '@/lib/uploadthing';
 import { handleError } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import { createEvent } from '@/lib/actions/event-actions';
+import { EventFormDataType } from '@/types/event-types';
+import 'react-datepicker/dist/react-datepicker.css';
 
 type EventFormProps = {
   userId: string;

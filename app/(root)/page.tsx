@@ -1,8 +1,16 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import EventList from '@/components/shared/event-list';
+import { getEvents } from '@/lib/actions/event-actions';
 
-export default function Home() {
+export default async function Home() {
+  const events = await getEvents({
+    query: '',
+    page: 1,
+    limit: 6,
+  });
+
   return (
     <>
       <section className="py-5 md:py-10 bg-primary-50 bg-dotted-pattern bg-contain">
@@ -35,6 +43,18 @@ export default function Home() {
         </h2>
 
         <div className="w-full flex flex-col md:flex-row gap-5">Search Category</div>
+
+        {events && (
+          <EventList
+            data={events.data}
+            emptyTitle="No Events Found"
+            emptyStateSubtext="Come back later"
+            collectionType="All_Events"
+            limit={6}
+            page={1}
+            totalPage={events.totalPages}
+          />
+        )}
       </section>
     </>
   );

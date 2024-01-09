@@ -1,4 +1,5 @@
 export type UserType = {
+  id: string;
   clerkId: string;
   firstName: string;
   lastName: string;

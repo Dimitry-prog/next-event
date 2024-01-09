@@ -4,7 +4,7 @@ import { UserType } from '@/types/user-types';
 import { handleError } from '@/lib/utils';
 import prisma from '../prismadb';
 
-export const createUser = async (userData: UserType) => {
+export const createUser = async (userData: Omit<UserType, 'id'>) => {
   try {
     const user = await prisma.user.create({ data: userData });
     return user;

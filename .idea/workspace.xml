@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/events/create/[eventId]/update/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/event-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions/event-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/event-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/user-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/event-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/event-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/form-data-types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/user-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/user-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +77,7 @@
       <recent name="D:\webWork\example\java-script-mastery\next-event" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)\events\[eventId]" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\(root)\events\create" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook\clerk" />
       <recent name="D:\webWork\example\java-script-mastery\next-event\app\api\webhook" />
@@ -107,6 +112,8 @@
       <workItem from="1704561514055" duration="5487000" />
       <workItem from="1704639146034" duration="457000" />
       <workItem from="1704639645723" duration="2849000" />
+      <workItem from="1704723404721" duration="5279000" />
+      <workItem from="1704734324471" duration="3561000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
