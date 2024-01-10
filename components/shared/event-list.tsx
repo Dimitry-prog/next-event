@@ -7,7 +7,7 @@ type EventListType = {
   emptyStateSubtext: string;
   limit: number;
   page: number | string;
-  collectionType?: 'Events_organized' | 'My_Tickets' | 'All_Events';
+  collectionType?: 'Events_Organized' | 'My_Tickets' | 'All_Events';
   totalPage?: number;
   urlParamName?: string;
 };
@@ -28,7 +28,7 @@ const EventList = ({
         <div className="flex flex-col items-center gap-10">
           <ul className="w-full grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10">
             {data.map((event) => {
-              const hasOrderLink = collectionType === 'Events_organized';
+              const hasOrderLink = collectionType === 'Events_Organized';
               const hidePrice = collectionType === 'My_Tickets';
               return (
                 <li key={event.id} className="flex justify-center">

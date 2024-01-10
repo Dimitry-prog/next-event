@@ -1,4 +1,4 @@
-import { getEventById, getEventsByCategory } from '@/lib/actions/event-actions';
+import { getEventById, getEventsByCategoryId } from '@/lib/actions/event-actions';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { formatDateTime } from '@/lib/utils';
@@ -12,7 +12,7 @@ type SingleEventPageProps = {
 
 const SingleEventPage = async ({ params: { eventId } }: SingleEventPageProps) => {
   const event = await getEventById(eventId);
-  const eventsByCategory = await getEventsByCategory({
+  const eventsByCategory = await getEventsByCategoryId({
     categoryId: event?.categoryId as string,
     eventId: event?.id as string,
     page: 1,

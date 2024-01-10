@@ -149,7 +149,7 @@ export const updateEvent = async ({
   }
 };
 
-export const getEventsByCategory = async ({
+export const getEventsByCategoryId = async ({
   categoryId,
   eventId,
   limit = 3,
@@ -201,6 +201,44 @@ export const getEventsByCategory = async ({
       data: events,
       totalPages: Math.ceil(totalEvents / limit),
     };
+  } catch (e) {
+    handleError(e);
+  }
+};
+
+export const getEventsByUserId = async ({
+  userId,
+  limit = 3,
+  page,
+}: {
+  userId: string;
+  limit?: number;
+  page: number;
+}) => {
+  try {
+    const totalEvents = await prisma.event.count({
+      where: {
+        userId,
+      },
+    });
+
+    const events = await prisma.event.findMany({
+      where: {
+        userId,
+      },
+      include: {
+        category: true,
+        organizer: true,
+        orders: true,
+      },
+      orderBy: {
+        createdAt: 'desc',
+      },
+      take: limit,
+      skip: limit * (page - 1),
+    });
+
+    return { data: events, totalPages: Math.ceil(totalEvents / limit) };
   } catch (e) {
     handleError(e);
   }
