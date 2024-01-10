@@ -17,28 +17,29 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useUploadThing } from '@/lib/uploadthing';
 import { handleError } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
-import { createEvent } from '@/lib/actions/event-actions';
-import { EventFormDataType } from '@/types/event-types';
+import { createEvent, updateEvent } from '@/lib/actions/event-actions';
+import { EventFormDataType, EventType } from '@/types/event-types';
 import 'react-datepicker/dist/react-datepicker.css';
 
 type EventFormProps = {
   userId: string;
   type: 'Create' | 'Update';
+  event?: EventType;
+  eventId?: string;
 };
 
-const EventForm = ({ userId, type }: EventFormProps) => {
+const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
   const [files, setFiles] = useState<File[]>([]);
   const { startUpload } = useUploadThing('imageUploader');
   const router = useRouter();
+  const initialValues = event && type === 'Update' ? event : eventDefaultValues;
 
   const form = useForm<EventFormDataType>({
     resolver: zodResolver(eventFormSchema),
-    defaultValues: eventDefaultValues,
+    defaultValues: initialValues,
   });
 
   const onSubmit: SubmitHandler<EventFormDataType> = async (data) => {
-    console.log(data);
-
     let uploadImageUrl = data.imageUrl;
     if (files.length) {
       const uploadedImages = await startUpload(files);
@@ -58,6 +59,28 @@ const EventForm = ({ userId, type }: EventFormProps) => {
         if (event) {
           form.reset();
           router.push(`/events/${event.id}`);
+        }
+      } catch (e) {
+        handleError(e);
+      }
+    }
+
+    if (type === 'Update') {
+      if (!eventId) {
+        router.back();
+        return;
+      }
+
+      try {
+        const updatedEvent = await updateEvent({
+          eventId,
+          event: { ...data, imageUrl: uploadImageUrl },
+          path: `/events/${eventId}`,
+        });
+
+        if (updatedEvent) {
+          form.reset();
+          router.push(`/events/${updatedEvent.id}`);
         }
       } catch (e) {
         handleError(e);

@@ -41,7 +41,7 @@ const EventCard = ({ event, hidePrice, hasOrderLink }: EventCardProps) => {
               {event.isFree ? 'FREE' : `$${event.price}`}
             </span>
 
-            <p className="w-min px-4 py-1 text-grey-600 p-semibold-14 rounded-full bg-grey-400">
+            <p className="w-max px-4 py-1 text-grey-600 p-semibold-14 line-clamp-1 rounded-full bg-grey-400">
               {event.category.name}
             </p>
           </div>

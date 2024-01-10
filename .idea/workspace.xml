@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: deploy">
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="feat: event card and list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/events/create/[eventId]/update/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/update/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/shared/event-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions/event-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/event-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions/user-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/event-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/event-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/form-data-types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/user-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/user-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/contants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contants.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +112,10 @@
       <workItem from="1704639645723" duration="2849000" />
       <workItem from="1704723404721" duration="5279000" />
       <workItem from="1704734324471" duration="3561000" />
+      <workItem from="1704803929446" duration="1090000" />
+      <workItem from="1704805042911" duration="6320000" />
+      <workItem from="1704821105481" duration="826000" />
+      <workItem from="1704891543815" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -179,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704293007299</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: event card and list">
+      <option name="closed" value="true" />
+      <created>1704803998148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704803998148</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +198,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: clerk" />
     <MESSAGE value="fix: deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: deploy" />
+    <MESSAGE value="feat: event card and list" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: event card and list" />
   </component>
 </project>
