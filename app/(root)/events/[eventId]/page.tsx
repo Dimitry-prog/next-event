@@ -1,8 +1,8 @@
 import { getEventById, getEventsByCategoryId } from '@/lib/actions/event-actions';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import { formatDateTime } from '@/lib/utils';
 import EventList from '@/components/shared/event-list';
+import CheckoutButton from '@/components/shared/checkout-button';
 
 type SingleEventPageProps = {
   params: {
@@ -58,7 +58,7 @@ const SingleEventPage = async ({ params: { eventId } }: SingleEventPageProps) =>
               </div>
             </div>
 
-            <Button>Checkout</Button>
+            <CheckoutButton event={event} />
 
             <div className="flex flex-col g-5">
               <div className="flex gap-2 md:gap-3">
