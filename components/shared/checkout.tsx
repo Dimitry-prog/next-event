@@ -2,7 +2,7 @@ import { EventType } from '@/types/event-types';
 import { Button } from '@/components/ui/button';
 import { loadStripe } from '@stripe/stripe-js';
 import { useEffect } from 'react';
-import { checkoutOrder } from '@/lib/actions/oreder-actions';
+import { checkoutOrder } from '@/lib/actions/order-actions';
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
@@ -30,7 +30,7 @@ const Checkout = ({ event }: CheckoutProps) => {
       eventId: event.id,
       price: event.price,
       isFree: event.isFree,
-      buyerId: event.userId,
+      userId: event.userId,
     };
 
     await checkoutOrder(order);
