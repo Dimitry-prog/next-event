@@ -12,16 +12,7 @@ type EventListType = {
   urlParamName?: string;
 };
 
-const EventList = ({
-  data,
-  collectionType,
-  emptyTitle,
-  emptyStateSubtext,
-  page,
-  totalPage = 0,
-  limit,
-  urlParamName,
-}: EventListType) => {
+const EventList = ({ data, collectionType, emptyTitle, emptyStateSubtext }: EventListType) => {
   return (
     <>
       {data.length ? (
