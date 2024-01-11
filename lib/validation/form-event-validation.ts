@@ -1,30 +1,45 @@
 import * as z from 'zod';
 
-export const eventFormSchema = z.object({
-  title: z.string().min(3, {
-    message: 'Title must be at least 3 characters.',
-  }),
-  description: z
-    .string()
-    .min(3, {
-      message: 'Description must be at least 3 characters.',
-    })
-    .max(400, {
-      message: 'Description must be less than 400 characters.',
+export const eventFormSchema = z
+  .object({
+    title: z.string().min(3, {
+      message: 'Title must be at least 3 characters.',
     }),
-  location: z
-    .string()
-    .min(3, {
-      message: 'Location must be at least 3 characters.',
-    })
-    .max(400, {
-      message: 'Location must be less than 400 characters.',
+    description: z
+      .string()
+      .min(3, {
+        message: 'Description must be at least 3 characters.',
+      })
+      .max(400, {
+        message: 'Description must be less than 400 characters.',
+      }),
+    location: z
+      .string()
+      .min(3, {
+        message: 'Location must be at least 3 characters.',
+      })
+      .max(400, {
+        message: 'Location must be less than 400 characters.',
+      }),
+    imageUrl: z.string().min(1, {
+      message: 'Choose any image',
     }),
-  imageUrl: z.string(),
-  startDateTime: z.date(),
-  endDateTime: z.date(),
-  categoryId: z.string().min(1, { message: 'Choose category' }),
-  price: z.string(),
-  isFree: z.boolean(),
-  url: z.string().url(),
-});
+    startDateTime: z.date(),
+    endDateTime: z.date(),
+    categoryId: z.string().min(1, { message: 'Choose category' }),
+    price: z.string(),
+    isFree: z.boolean(),
+    url: z.string().url(),
+  })
+  .refine(
+    (value) => {
+      if (value.isFree === false && !value.price) {
+        return false;
+      }
+      return true;
+    },
+    {
+      message: 'Enter price',
+      path: ['price'],
+    }
+  );

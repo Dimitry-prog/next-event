@@ -1,5 +1,3 @@
-import { EventType } from '@/types/event-types';
-
 export const headerLinks = [
   {
     label: 'Home',
@@ -15,7 +13,7 @@ export const headerLinks = [
   },
 ];
 
-export const eventDefaultValues: Partial<EventType> = {
+export const eventDefaultValues = {
   title: '',
   description: '',
   location: '',

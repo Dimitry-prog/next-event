@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="feat: stripe">
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: lint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/event-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/alert-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/alert-dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/textarea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/contants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/validation/form-event-validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validation/form-event-validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/event-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/event-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,9 @@
       <workItem from="1704891543815" duration="5336000" />
       <workItem from="1704906608311" duration="3891000" />
       <workItem from="1704982583466" duration="792000" />
-      <workItem from="1704992592049" duration="2474000" />
+      <workItem from="1704992592049" duration="3765000" />
+      <workItem from="1704997066071" duration="2388000" />
+      <workItem from="1704999474490" duration="228000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -226,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704995263660</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: lint">
+      <option name="closed" value="true" />
+      <created>1704995792379</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704995792379</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +246,7 @@
     <MESSAGE value="feat: getEventsByUserId" />
     <MESSAGE value="feat: checkout ui" />
     <MESSAGE value="feat: stripe" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: stripe" />
+    <MESSAGE value="fix: lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: lint" />
   </component>
 </project>
