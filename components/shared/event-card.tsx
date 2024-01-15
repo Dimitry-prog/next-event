@@ -34,24 +34,28 @@ const EventCard = ({ event, hidePrice, hasOrderLink }: EventCardProps) => {
         </div>
       )}
 
-      <Link href={`/events/${event.id}`} className="min-h-[230px] p-5 flex flex-col gap-3 md:gap-4">
-        {!hidePrice && (
-          <div className="flex gap-2">
-            <span className="w-min px-4 py-1 text-green-600 p-semibold-14 rounded-full bg-green-100">
-              {event.isFree ? 'FREE' : `$${event.price}`}
-            </span>
+      <div className="min-h-[230px] p-5 flex flex-col gap-3 md:gap-4">
+        <Link href={`/events/${event.id}`} className="flex-1 flex flex-col gap-3">
+          {!hidePrice && (
+            <div className="flex gap-2">
+              <span className="w-min px-4 py-1 text-green-600 p-semibold-14 rounded-full bg-green-100">
+                {event.isFree ? 'FREE' : `$${event.price}`}
+              </span>
 
-            <p className="w-max px-4 py-1 text-grey-600 p-semibold-14 line-clamp-1 rounded-full bg-grey-400">
-              {event.category.name}
-            </p>
-          </div>
-        )}
+              <p className="w-max px-4 py-1 text-grey-600 p-semibold-14 line-clamp-1 rounded-full bg-grey-400">
+                {event.category.name}
+              </p>
+            </div>
+          )}
 
-        <p className="p-medium-16 md:p-medium-18 text-grey-500">
-          {formatDateTime(event.startDateTime).dateTime}
-        </p>
+          <p className="p-medium-16 md:p-medium-18 text-grey-500">
+            {formatDateTime(event.startDateTime).dateTime}
+          </p>
 
-        <h2 className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">{event.title}</h2>
+          <h2 className="p-medium-16 md:p-medium-20 line-clamp-2 flex-1 text-black">
+            {event.title}
+          </h2>
+        </Link>
 
         <div className="w-full flex-between">
           <p className="p-medium-14 md:p-medium-16 text-grey-600">
@@ -65,7 +69,7 @@ const EventCard = ({ event, hidePrice, hasOrderLink }: EventCardProps) => {
             </Link>
           )}
         </div>
-      </Link>
+      </div>
     </div>
   );
 };

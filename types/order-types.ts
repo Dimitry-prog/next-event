@@ -1,3 +1,13 @@
+export type OrderType = {
+  id: string;
+  stripeId: string;
+  totalAmount?: string | null;
+  createdAt: Date;
+  updatedAt: Date;
+  userId: string;
+  eventId: string;
+};
+
 export type OrderCheckoutParamsType = {
   eventTitle: string;
   eventId: string;

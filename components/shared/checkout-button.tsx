@@ -1,7 +1,5 @@
-'use client';
-
 import { EventType } from '@/types/event-types';
-import { SignedIn, SignedOut, useUser } from '@clerk/nextjs';
+import { SignedIn, SignedOut } from '@clerk/nextjs';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Checkout from '@/components/shared/checkout';
@@ -11,14 +9,15 @@ type CheckoutButtonProps = {
 };
 
 const CheckoutButton = ({ event }: CheckoutButtonProps) => {
-  const { user } = useUser();
-  const userId = user?.publicMetadata?.userId as string;
   const hasEventFinished = new Date(event.endDateTime) < new Date();
+  const isAlreadyHaveTicket = event.orders.some((order) => order.userId === event.userId);
 
   return (
     <div className="flex items-center gap-3 ">
       {hasEventFinished ? (
         <p className="px-2 text-red-400">Sorry, tickets are no longer available</p>
+      ) : isAlreadyHaveTicket ? (
+        <p className="p-regular-18 text-primary-500">You already have the ticket</p>
       ) : (
         <>
           <SignedOut>
@@ -28,7 +27,7 @@ const CheckoutButton = ({ event }: CheckoutButtonProps) => {
           </SignedOut>
 
           <SignedIn>
-            <Checkout event={event} userId={userId} />
+            <Checkout event={event} />
           </SignedIn>
         </>
       )}

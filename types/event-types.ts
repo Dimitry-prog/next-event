@@ -2,6 +2,7 @@ import * as z from 'zod';
 import { eventFormSchema } from '@/lib/validation/form-event-validation';
 import { UserType } from '@/types/user-types';
 import { CategoryType } from '@/types/category-types';
+import { OrderType } from '@/types/order-types';
 
 export type EventType = {
   id: string;
@@ -20,6 +21,7 @@ export type EventType = {
   userId: string;
   category: CategoryType;
   categoryId: string;
+  orders: OrderType[];
 };
 
 export type EventParamsType = {
