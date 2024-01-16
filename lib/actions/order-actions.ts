@@ -52,3 +52,44 @@ export const createOrder = async (orderData: OrderCreateParamsType) => {
     handleError(e);
   }
 };
+
+export const getOrdersByEvent = async ({
+  eventId,
+  search,
+}: {
+  eventId: string;
+  search: string;
+}) => {
+  try {
+    const orders = await prisma.order.findMany({
+      where: {
+        eventId,
+        buyer: {
+          email: {
+            contains: search,
+            mode: 'insensitive',
+          },
+        },
+      },
+      select: {
+        event: {
+          select: {
+            title: true,
+          },
+        },
+        buyer: {
+          select: {
+            email: true,
+          },
+        },
+        id: true,
+        createdAt: true,
+        totalAmount: true,
+      },
+    });
+
+    return orders;
+  } catch (e) {
+    handleError(e);
+  }
+};

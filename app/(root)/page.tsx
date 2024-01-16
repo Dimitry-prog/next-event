@@ -3,11 +3,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import EventList from '@/components/shared/event-list';
 import { getEvents } from '@/lib/actions/event-actions';
+import Search from '@/components/shared/search';
+import CategoryFilter from '@/components/shared/category-filter';
 
-export default async function Home() {
+type HomeProps = {
+  searchParams: { [key: string]: string | undefined };
+};
+
+export default async function Home({ searchParams }: HomeProps) {
+  const page = Number(searchParams?.page) || 1;
+  const searchTitle = searchParams?.query || '';
+  const categoryId = searchParams?.category;
+
   const events = await getEvents({
-    query: '',
-    page: 1,
+    query: searchTitle,
+    categoryId: categoryId!,
+    page,
     limit: 6,
   });
 
@@ -42,7 +53,10 @@ export default async function Home() {
           Trust by <br /> Thousands of Events
         </h2>
 
-        <div className="w-full flex flex-col md:flex-row gap-5">Search Category</div>
+        <div className="w-full flex flex-col md:flex-row gap-5">
+          <Search />
+          <CategoryFilter />
+        </div>
 
         {events && (
           <EventList

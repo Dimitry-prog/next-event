@@ -4,10 +4,16 @@ import { auth } from '@clerk/nextjs';
 import { getEventsByUserId } from '@/lib/actions/event-actions';
 import EventList from '@/components/shared/event-list';
 
-const ProfilePage = async ({searchParams}) => {
+type ProfilePageProps = {
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+const ProfilePage = async ({ searchParams }: ProfilePageProps) => {
   const { sessionClaims } = auth();
   const userId = sessionClaims?.userId as string;
-  const eventsByUser = await getEventsByUserId({ userId, page: 1 });
+  const eventsPage = Number(searchParams?.eventsPage) || 1;
+
+  const eventsByUser = await getEventsByUserId({ userId, page: eventsPage });
   const userPurchasedEvents =
     eventsByUser?.data.filter((event) => event.orders.some((order) => order.userId === userId)) ||
     [];
@@ -32,7 +38,7 @@ const ProfilePage = async ({searchParams}) => {
             emptyStateSubtext="No worries!"
             collectionType="My_Tickets"
             limit={3}
-            page={1}
+            page={eventsPage}
             totalPage={eventsByUser.totalPages}
             urlParamName="ordersPage"
           />
@@ -57,7 +63,7 @@ const ProfilePage = async ({searchParams}) => {
             emptyStateSubtext="You can create some now!"
             collectionType="Events_Organized"
             limit={3}
-            page={1}
+            page={eventsPage}
             totalPage={eventsByUser.totalPages}
             urlParamName="eventsPage"
           />

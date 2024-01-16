@@ -32,6 +32,7 @@ export type EventParamsType = {
 
 export type EventsAllParamsType = {
   query: string;
+  categoryId: string;
   limit: number;
   page: number;
 };

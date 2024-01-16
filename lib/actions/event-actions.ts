@@ -68,7 +68,7 @@ export const getEventById = async (eventId: string) => {
   }
 };
 
-export const getEvents = async ({ query, limit = 6, page }: EventsAllParamsType) => {
+export const getEvents = async ({ query, categoryId, limit = 6, page }: EventsAllParamsType) => {
   try {
     const totalEvents = await prisma.event.count({
       where: {
@@ -76,6 +76,7 @@ export const getEvents = async ({ query, limit = 6, page }: EventsAllParamsType)
           contains: query,
           mode: 'insensitive',
         },
+        categoryId,
       },
     });
     const events = await prisma.event.findMany({
@@ -84,6 +85,7 @@ export const getEvents = async ({ query, limit = 6, page }: EventsAllParamsType)
           contains: query,
           mode: 'insensitive',
         },
+        categoryId,
       },
       include: {
         orders: true,

@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: lint">
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: card, profile, stripe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(root)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/checkout-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/checkout-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/event-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/event-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/actions/order-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/order-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types/event-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/event-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/order-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/order-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,8 @@
       <workItem from="1705255849389" duration="4441000" />
       <workItem from="1705260318366" duration="2339000" />
       <workItem from="1705263427594" duration="1082000" />
-      <workItem from="1705327208353" duration="514000" />
+      <workItem from="1705327208353" duration="4625000" />
+      <workItem from="1705340819194" duration="5495000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -256,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704999835104</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: card, profile, stripe">
+      <option name="closed" value="true" />
+      <created>1705327765412</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327765412</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +279,7 @@
     <MESSAGE value="feat: checkout ui" />
     <MESSAGE value="feat: stripe" />
     <MESSAGE value="fix: lint" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: lint" />
+    <MESSAGE value="fix: card, profile, stripe" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: card, profile, stripe" />
   </component>
 </project>
