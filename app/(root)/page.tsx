@@ -65,8 +65,8 @@ export default async function Home({ searchParams }: HomeProps) {
             emptyStateSubtext="Come back later"
             collectionType="All_Events"
             limit={6}
-            page={1}
-            totalPage={events.totalPages}
+            page={page}
+            totalPages={events.totalPages}
           />
         )}
       </section>

@@ -39,8 +39,7 @@ const ProfilePage = async ({ searchParams }: ProfilePageProps) => {
             collectionType="My_Tickets"
             limit={3}
             page={eventsPage}
-            totalPage={eventsByUser.totalPages}
-            urlParamName="ordersPage"
+            totalPages={eventsByUser.totalPages}
           />
         )}
       </section>
@@ -64,8 +63,7 @@ const ProfilePage = async ({ searchParams }: ProfilePageProps) => {
             collectionType="Events_Organized"
             limit={3}
             page={eventsPage}
-            totalPage={eventsByUser.totalPages}
-            urlParamName="eventsPage"
+            totalPages={eventsByUser.totalPages}
           />
         )}
       </section>

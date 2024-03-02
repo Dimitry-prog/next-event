@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="fix: card, profile, stripe">
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="feat: search and filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/orders/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/orders/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(root)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions/event-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/event-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/actions/order-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/order-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/event-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/event-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/event-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/webWork/my_self/tests/test-like-stepik&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/webWork/my_self/personal-grade&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -135,6 +135,54 @@
       <workItem from="1705263427594" duration="1082000" />
       <workItem from="1705327208353" duration="4625000" />
       <workItem from="1705340819194" duration="5495000" />
+      <workItem from="1705412374572" duration="3890000" />
+      <workItem from="1705428876633" duration="1680000" />
+      <workItem from="1705502842760" duration="872000" />
+      <workItem from="1705589057287" duration="4057000" />
+      <workItem from="1705676102897" duration="260000" />
+      <workItem from="1705779792016" duration="388000" />
+      <workItem from="1705932668902" duration="389000" />
+      <workItem from="1705933278578" duration="532000" />
+      <workItem from="1706037866061" duration="484000" />
+      <workItem from="1706437443051" duration="1807000" />
+      <workItem from="1706899560033" duration="100000" />
+      <workItem from="1706899726458" duration="16000" />
+      <workItem from="1706900115763" duration="16000" />
+      <workItem from="1706902760485" duration="105000" />
+      <workItem from="1706903222401" duration="231000" />
+      <workItem from="1707312932789" duration="10000" />
+      <workItem from="1707328839452" duration="20000" />
+      <workItem from="1707581803784" duration="245000" />
+      <workItem from="1707585372293" duration="171000" />
+      <workItem from="1707585606532" duration="20000" />
+      <workItem from="1707585726813" duration="4000" />
+      <workItem from="1707598581206" duration="187000" />
+      <workItem from="1707601041962" duration="3000" />
+      <workItem from="1707936983549" duration="161000" />
+      <workItem from="1707937344909" duration="153000" />
+      <workItem from="1708098179459" duration="5000" />
+      <workItem from="1708098197248" duration="1308000" />
+      <workItem from="1708107850617" duration="131000" />
+      <workItem from="1708109515962" duration="528000" />
+      <workItem from="1708110106378" duration="629000" />
+      <workItem from="1708111486706" duration="1163000" />
+      <workItem from="1708167855804" duration="616000" />
+      <workItem from="1708179970422" duration="28000" />
+      <workItem from="1708182146416" duration="106000" />
+      <workItem from="1708183203532" duration="126000" />
+      <workItem from="1708263913088" duration="65000" />
+      <workItem from="1708266026168" duration="349000" />
+      <workItem from="1708266420892" duration="311000" />
+      <workItem from="1708268076712" duration="159000" />
+      <workItem from="1708268247138" duration="8000" />
+      <workItem from="1708269224862" duration="38000" />
+      <workItem from="1708269364107" duration="7000" />
+      <workItem from="1708944785254" duration="633000" />
+      <workItem from="1709061404440" duration="324000" />
+      <workItem from="1709061965777" duration="28000" />
+      <workItem from="1709321282080" duration="669000" />
+      <workItem from="1709375578490" duration="1195000" />
+      <workItem from="1709403508101" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -264,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705327765412</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: search and filter">
+      <option name="closed" value="true" />
+      <created>1705412415299</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705412415299</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +336,7 @@
     <MESSAGE value="feat: stripe" />
     <MESSAGE value="fix: lint" />
     <MESSAGE value="fix: card, profile, stripe" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: card, profile, stripe" />
+    <MESSAGE value="feat: search and filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: search and filter" />
   </component>
 </project>

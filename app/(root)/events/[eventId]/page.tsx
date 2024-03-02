@@ -105,7 +105,7 @@ const SingleEventPage = async ({ params: { eventId } }: SingleEventPageProps) =>
             collectionType="All_Events"
             limit={6}
             page={1}
-            totalPage={eventsByCategory.totalPages}
+            totalPages={eventsByCategory.totalPages}
           />
         )}
       </section>

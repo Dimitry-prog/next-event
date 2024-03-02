@@ -19,7 +19,7 @@ const OrdersPage = async ({ searchParams }: OrdersPageProps) => {
       </section>
 
       <section className="wrapper mt-8">
-        <Search placeholder="Search buyer name..." />
+        <Search placeholder="Search buyer email..." />
       </section>
 
       <section className="wrapper overflow-x-auto">
