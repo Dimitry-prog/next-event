@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="feat: search and filter">
+    <list default="true" id="6f020f4c-8307-4131-8156-a878705e9277" name="Changes" comment="feat: pagination">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/events/[eventId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/orders/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/orders/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/profile/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/event-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/event-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +177,8 @@
       <workItem from="1709321282080" duration="669000" />
       <workItem from="1709375578490" duration="1195000" />
       <workItem from="1709403508101" duration="309000" />
+      <workItem from="1709408289738" duration="747000" />
+      <workItem from="1709468557160" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="fix: clerk">
       <option name="closed" value="true" />
@@ -320,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705412415299</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: pagination">
+      <option name="closed" value="true" />
+      <created>1709408434191</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709408434191</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +341,7 @@
     <MESSAGE value="fix: lint" />
     <MESSAGE value="fix: card, profile, stripe" />
     <MESSAGE value="feat: search and filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: search and filter" />
+    <MESSAGE value="feat: pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: pagination" />
   </component>
 </project>
