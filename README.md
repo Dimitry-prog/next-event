@@ -3,6 +3,9 @@
 * [link on github](https://github.com/Dimitry-prog/next-event)
 * [demo](https://next-event-sigma.vercel.app/)
 
+##
+Application for registration and payment full stack
+
 ## Getting Started
 
 ```bash
